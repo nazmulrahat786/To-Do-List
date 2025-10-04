@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>📝 To-Do List</h1>
+      <button id="themeToggle" class="theme-btn">🌙</button>
+    </header>
+
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Add a new task...">
+      <button id="addBtn">Add</button>
+    </div>
+
+    <div class="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="completed">Completed</button>
+      <button data-filter="pending">Pending</button>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="🔍 Search tasks...">
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="task-stats">
+      <span>Total: <strong id="totalTasks">0</strong></span>
+      <span>Completed: <strong id="completedTasks">0</strong></span>
+      <span>Pending: <strong id="pendingTasks">0</strong></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
